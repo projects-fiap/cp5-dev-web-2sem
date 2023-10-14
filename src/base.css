@@ -1,0 +1,36 @@
+:root {
+    --color-blue: #010B13;
+    --color-orange: #C3714B;
+    --color-beige: #E7EED0;
+    --color--darkbeige: rgba(139, 120, 140, 1);
+    --color-gray: rgba(71, 74, 81, 1);
+}
+
+.logo {
+    width: 150px;
+}
+
+.bg-blue {
+    background-color: var(--color-blue);
+}
+
+.bg-orange {
+    background-color: var(--color-orange);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.text-icon {
+    color: var(--color-beige);
+}
+
+.bg-darkbeige {
+    background-color: var(--color--darkbeige);
+    color: var(--color--darkbeige);
+}
+
+.nav-link.active.text-orange {
+    color: var(--color-orange);
+}
