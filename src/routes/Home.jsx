@@ -7,13 +7,16 @@ import card2 from '../assets/card2.png'
 import card3 from '../assets/card3.png'
 import card4 from '../assets/card4.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import slide1 from '../assets/slide-1.jpg'
+import slide2 from '../assets/slide-2.jpg'
+import slide3 from '../assets/slide-3.jpg'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const images = [
-    { id: 1, path: './src/assets/slide-1.jpg' },
-    { id: 2, path: './src/assets/slide-2.jpg' },
-    { id: 3, path: './src/assets/slide-3.jpg' },
+    { id: 1, path: slide1 },
+    { id: 2, path: slide2 },
+    { id: 3, path: slide3 },
 ]
 
 export default function Home() {
