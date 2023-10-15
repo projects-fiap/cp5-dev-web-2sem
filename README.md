@@ -9,6 +9,8 @@ Currently, two official plugins are available:
 
 ### Integrantes
 
+Link to vercel: https://cp5-dev-web-2sem.vercel.app/home
+
 1. Açussena Macedo Mautone - RM: 552568
 2. Carlos Eduardo Caramante Ribeiro - RM: 552159
 3. Daniel Barbosa Mariano RM: - 551171
