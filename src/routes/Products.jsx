@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { products } from '../libs/products'
 
 export default function Products() {
-    console.log(products)
     return (
         <main className='background-products bg-black d-flex justify-content-center center'>
             <section className='mt-5'>
