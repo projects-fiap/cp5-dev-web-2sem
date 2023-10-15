@@ -1,40 +1,33 @@
-import { useNavigate, useParams } from "react-router-dom"
-import { products } from '../libs/products'
 import { useState } from "react"
+import { products } from "../libs/products"
+import { useNavigate } from "react-router-dom"
+import uuid from "react-uuid"
 
-export default function EditProduct() {
-    const { id } = useParams()
+export default function CreateProduct() {
     const navigate = useNavigate()
 
-    const existsProduct = products.filter(item => item.id === id)
-
-    const [product, setProduct] = useState({
-        id: existsProduct[0].id,
-        name: existsProduct[0].name,
-        description: existsProduct[0].description,
-        price: existsProduct[0].price,
-    })
-
     const handleSubmit = (event) => {
-        event.preventDefault()
-
-        const index = products.indexOf(item => {
-            item.id === id
-        })
-
-        products.splice(index, 1, product)
+        event.preventDefault();
+        products.push(product)
         navigate('/products')
     }
+    const [product, setProduct] = useState({
+        id: uuid(),
+        name: '',
+        description: '',
+        price: '',
+    })
 
     const handleChange = (event) => {
+        event.preventDefault()
         const { name, value } = event.target;
+
         setProduct({ ...product, [name]: value })
     }
-
     return (
         <main className="background-products bg-black d-flex justify-content-center">
             <section className="text-white">
-                <h1>EDITAR PRODUTOS</h1>
+                <h1>ADICIONAR PRODUTOS</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <input
@@ -80,4 +73,5 @@ export default function EditProduct() {
             </section>
         </main>
     )
+
 }
