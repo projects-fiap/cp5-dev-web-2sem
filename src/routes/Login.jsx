@@ -46,15 +46,13 @@ export default function Login() {
                                                     <h2 className="text-center text-white p-2">Login</h2>
                                                     <div className="col-lg-8 my-2">
                                                         <label htmlFor="Email" className="form-label"></label>
-                                                        <input type="text" className="form-control" id="Email" ref={user} name="Email" placeholder="Email" />
+                                                        <input type="text" className="form-control" id="Email" ref={user} placeholder="Usuário" />
                                                     </div>
 
                                                     <div className="col-lg-8 my-2">
                                                         <label htmlFor="senha" className="form-label"></label>
                                                         <input type="password" id="senha" className="form-control" ref={password} placeholder="Senha" />
                                                     </div>
-                                                    <p className="text-center text-white mt-2">Não possui Login? faça o cadastro <a href=""
-                                                        className="text-center text-white">aqui</a></p>
                                                 </div>
                                                 <div className="col-lg-12 d-flex justify-content-center my-4 p-2">
                                                     <button
