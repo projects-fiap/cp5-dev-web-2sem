@@ -23,7 +23,7 @@ export default function EditProduct() {
         })
 
         products.splice(index, 1, product)
-        navigate('/products')
+        navigate('/auth')
     }
 
     const handleChange = (event) => {
@@ -75,7 +75,7 @@ export default function EditProduct() {
                             onChange={handleChange}
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary mt-4">Submit</button>
+                    <button type="submit" className="btn btn-primary mt-4">Editar</button>
                 </form>
             </section>
         </main>

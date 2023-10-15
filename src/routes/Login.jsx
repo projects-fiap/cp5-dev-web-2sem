@@ -24,7 +24,9 @@ export default function Login() {
         <>
             {
                 getUser && getPassword ? (
-                    <Products />
+                    <>
+                        <Products />
+                    </>
                 ) : (
                     <main className="bg-black container-fluid" >
                         <div className="d-flex justify-content-center">

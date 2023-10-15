@@ -18,7 +18,7 @@ export default function DeleteProduct() {
         event.preventDefault()
         const index = products.findIndex(item => item.id === product.id)
         products.splice(index, 1)
-        navigate('/products')
+        navigate('/auth')
     }
 
 

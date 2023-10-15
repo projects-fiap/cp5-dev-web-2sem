@@ -1,5 +1,6 @@
 import { HiShoppingCart, HiSearch } from "react-icons/hi"
 import logo from '../assets/logo.png'
+import { Link } from "react-router-dom"
 
 
 export default function Nav() {
@@ -27,9 +28,9 @@ export default function Nav() {
                         </li>
                     </ul>
                     <form className="fs-3 justify-content-end">
-                        <a href="">
+                        <Link to={'/orders'}>
                             <HiShoppingCart className="text-icon" />
-                        </a>
+                        </Link>
                         <a href="">
                             <HiSearch className="text-icon" />
                         </a>
