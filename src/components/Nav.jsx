@@ -1,7 +1,6 @@
 import { HiShoppingCart, HiSearch } from "react-icons/hi"
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/js/index.esm'
 import logo from '../assets/logo.png'
+
 
 export default function Nav() {
     return (
