@@ -9,6 +9,8 @@ import App from './App.jsx'
 import Home from './routes/Home.jsx'
 import About from './routes/About.jsx'
 import Login from './routes/Login'
+import EditProduct from './routes/EditProduct'
+import Products from './routes/Products'
 
 
 const router = createBrowserRouter([
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
     children: [
       { path: '/home', element: <Home /> },
       { path: '/auth', element: <Login /> },
-      { path: '/about', element: <About /> }
+      { path: '/about', element: <About /> },
+      { path: '/products', element: <Products /> },
+      { path: '/products/:id', element: <EditProduct /> }
     ],
   },
 ])
