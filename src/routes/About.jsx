@@ -3,7 +3,6 @@ import daniel from '../assets/DanielBarbosa.png'
 import felipeV from '../assets/FelipeVoidela.png'
 import carlos from '../assets/CarlosEduardo.png'
 import acussena from '../assets/AçussenaMacedo.png'
-import '../about.css'
 
 export default function About() {
     return (

@@ -1,4 +1,3 @@
-import '../home.css'
 import frente1 from '../assets/frente1.png'
 import frente2 from '../assets/frente2.png'
 import atras1 from '../assets/atras1.png'

@@ -14,19 +14,16 @@ export default function Nav() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto gap-5">
                         <li className="nav-item">
-                            <a className="nav-link active text-orange fs-5" aria-current="page" href="#">HOME</a>
+                            <a className="nav-link active text-orange fs-5" aria-current="page" href="/home">HOME</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active text-orange fs-5" aria-current="page" href="#">SOBRE</a>
+                            <a className="nav-link active text-orange fs-5" aria-current="page" href="/about">SOBRE</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link active text-orange fs-5" aria-current="page" href="#">CATALOGO</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active text-orange fs-5" aria-current="page" href="#">SOBRE A EQUIPE</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link active text-orange fs-5" aria-current="page" href="#">MINHA CONTA</a>
+                            <a className="nav-link active text-orange fs-5" aria-current="page" href="/auth">MINHA CONTA</a>
                         </li>
                     </ul>
                     <form className="fs-3 justify-content-end">

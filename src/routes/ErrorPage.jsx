@@ -16,7 +16,7 @@ export function ErrorPage() {
 
                 <div className="row d-flex justify-content-center">
                     <p className="text-center">Parece que você se perdeu!</p>
-                    <a className="btn btn-danger col-lg-3" href="/">Clique aqui e volta para a página principal!</a>
+                    <a className="btn btn-danger col-lg-3" href="/home">Clique aqui e volta para a página principal!</a>
                 </div>
             </section>
         </>
