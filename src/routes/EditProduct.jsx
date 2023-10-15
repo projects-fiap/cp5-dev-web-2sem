@@ -6,13 +6,13 @@ export default function EditProduct() {
     const { id } = useParams()
     const navigate = useNavigate()
 
-    const existsProduct = products.filter(item => item.id === id)
+    const existsProduct = products.find(item => item.id === id)
 
     const [product, setProduct] = useState({
-        id: existsProduct[0].id,
-        name: existsProduct[0].name,
-        description: existsProduct[0].description,
-        price: existsProduct[0].price,
+        id: existsProduct.id,
+        name: existsProduct.name,
+        description: existsProduct.description,
+        price: existsProduct.price,
     })
 
     const handleSubmit = (event) => {

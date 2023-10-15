@@ -12,6 +12,7 @@ import Login from './routes/Login'
 import EditProduct from './routes/EditProduct'
 import Products from './routes/Products'
 import CreateProduct from './routes/CreateProduct'
+import DeleteProduct from './routes/DeleteProduct'
 
 
 const router = createBrowserRouter([
@@ -24,8 +25,9 @@ const router = createBrowserRouter([
       { path: '/auth', element: <Login /> },
       { path: '/about', element: <About /> },
       { path: '/products', element: <Products /> },
+      { path: '/products/new', element: <CreateProduct /> },
       { path: '/products/update/:id', element: <EditProduct /> },
-      { path: '/products/new', element: <CreateProduct /> }
+      { path: '/products/delete/:id', element: <DeleteProduct /> }
     ],
   },
 ])

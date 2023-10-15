@@ -1,6 +1,7 @@
 import { products } from '../libs/products'
 
 export default function Products() {
+    console.log(products)
     return (
         <main className='background-products bg-black d-flex justify-content-center center'>
             <section className='mt-5'>
@@ -22,7 +23,7 @@ export default function Products() {
                                 <td>{product.description}</td>
                                 <td>R${product.price}</td>
                                 <td><a className='text-white cta' href={`/products/update/${product.id}`}>Editar</a></td>
-                                <td><a className='text-white cta' href="">Excluir</a></td>
+                                <td><a className='text-white cta' href={`/products/delete/${product.id}`}>Excluir</a></td>
                                 <td></td>
                             </tr>
                         )}
