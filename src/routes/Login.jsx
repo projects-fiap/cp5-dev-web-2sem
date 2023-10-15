@@ -4,8 +4,8 @@ export default function Login() {
 
     const user = useRef()
     const password = useRef()
-    const getUser = sessionStorage.getItem('userData')
-    const getSenha = sessionStorage.getItem('senhaData')
+    // const getUser = sessionStorage.getItem('userData')
+    // const getSenha = sessionStorage.getItem('senhaData')
 
     const handleSubmit = () => {
         if (user.current.value === 'admin' && password.current.value === '12345') {
