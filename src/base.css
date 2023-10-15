@@ -31,6 +31,6 @@
     color: var(--color--darkbeige);
 }
 
-.nav-link.active.text-orange {
-    color: var(--color-orange);
+.text-orange {
+    color: var(--color-orange) !important;
 }
