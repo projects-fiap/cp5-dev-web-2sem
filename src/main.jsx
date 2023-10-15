@@ -6,6 +6,7 @@ import { ErrorPage } from './routes/ErrorPage.jsx'
 import './base.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/js/index.esm'
+import About from './routes/About.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: '/home', element: <Home /> },
+      { path: '/about', element: <About /> }
     ],
   },
 ])
