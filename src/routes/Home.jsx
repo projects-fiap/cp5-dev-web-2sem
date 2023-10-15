@@ -6,8 +6,6 @@ import card1 from '../assets/card1.png'
 import card2 from '../assets/card2.png'
 import card3 from '../assets/card3.png'
 import card4 from '../assets/card4.png'
-import { useState } from 'react'
-import { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
@@ -19,29 +17,10 @@ const images = [
 ]
 
 export default function Home() {
-    const [slidePreview, setSlidePreview] = useState(1)
-
-    useEffect(() => {
-        function handleResize() {
-            if (window.innerWidth < 720) {
-                setSlidePreview(1)
-            } else {
-                setSlidePreview(2)
-            }
-        }
-        handleResize()
-
-        window.addEventListener('resize', handleResize)
-        return () => {
-            window.removeEventListener('resize', handleResize)
-        }
-    }, [])
-
     return (
         <main className="container-fluid bg-black">
             <section>
                 <Swiper
-                    slidePreview={slidePreview}
                     pagination={{ clickable: true }}
                     navigation
                 >
