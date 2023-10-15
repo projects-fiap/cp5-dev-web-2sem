@@ -16,6 +16,7 @@ import DeleteProduct from './routes/DeleteProduct'
 import Orders from './routes/Orders'
 import CreateOrder from './routes/CreateOrder'
 import EditOrder from './routes/EditOrder'
+import DeleteOrder from './routes/DeleteOrder'
 
 
 const router = createBrowserRouter([
@@ -33,7 +34,8 @@ const router = createBrowserRouter([
       { path: '/products/delete/:id', element: <DeleteProduct /> },
       { path: '/orders', element: <Orders /> },
       { path: '/orders/new', element: <CreateOrder /> },
-      { path: '/orders/update/:id', element: <EditOrder /> }
+      { path: '/orders/update/:id', element: <EditOrder /> },
+      { path: '/orders/delete/:id', element: <DeleteOrder /> },
     ],
   },
 ])
