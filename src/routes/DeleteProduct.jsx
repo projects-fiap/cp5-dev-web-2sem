@@ -6,23 +6,17 @@ export default function DeleteProduct() {
     const { id } = useParams()
     const navigate = useNavigate()
 
-    const existsProduct = products.find(item => item.id === id)
-
-
+    const existProduct = products.filter((item) => item.id == id)
     const [product] = useState({
-        id: existsProduct.id,
-        name: existsProduct.name,
-        description: existsProduct.description,
-        price: existsProduct.price,
-    })
-
+        id: existProduct[0].id,
+        name: existProduct[0].name,
+        description: existProduct[0].description,
+        price: existProduct[0].price,
+    });
+    /*funções */
     const handleDelete = (event) => {
         event.preventDefault()
-
-        const index = products.findIndex(item =>
-            item.id === id
-        )
-
+        const index = products.findIndex(item => item.id === product.id)
         products.splice(index, 1)
         navigate('/products')
     }

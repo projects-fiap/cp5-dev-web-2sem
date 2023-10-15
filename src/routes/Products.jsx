@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { products } from '../libs/products'
 
 export default function Products() {
@@ -22,8 +23,8 @@ export default function Products() {
                                 <td>{product.name}</td>
                                 <td>{product.description}</td>
                                 <td>R${product.price}</td>
-                                <td><a className='text-white cta' href={`/products/update/${product.id}`}>Editar</a></td>
-                                <td><a className='text-white cta' href={`/products/delete/${product.id}`}>Excluir</a></td>
+                                <td><Link className='text-white cta' to={`/products/update/${product.id}`}>Editar</Link></td>
+                                <td><Link className='text-white cta' to={`/products/delete/${product.id}`}>Excluir</Link></td>
                                 <td></td>
                             </tr>
                         )}
