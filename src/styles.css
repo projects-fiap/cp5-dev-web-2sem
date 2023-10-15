@@ -68,5 +68,19 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
+}
 
+.background-products {
+    background-image: url(./assets/background-1.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.cta {
+    background-color: var(--color-blue);
+    padding: 5px;
+    border-radius: 50px;
+    text-decoration: none;
 }
